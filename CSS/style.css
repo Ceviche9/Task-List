@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --primery-color: #da7f8f;
+    --primery-color-darker: #ce4d64;
+    --primery-color-black: #a01730;;
+      
+}
+
+*  {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a113a;
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    line-height: 1.5em;   
+}
+
+.Caixa {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.Clock{
+
+    font-size: 3em;
+
+}
+
+.pausado{
+
+    color: red;
+
+}
+
+
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
