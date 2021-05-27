@@ -10,15 +10,10 @@ input.addEventListener('keypress', function(e) {
     }
 })
 
-function createLi() {
-    const Li = document.createElement('Li');
-    return Li
-}
-
 function createTask(Task) {
-    const Li = createLi();
+    const Li = document.createElement('Li');
     Li.innerText = Task;
-    task.appendChild(Li)
+    task.appendChild(Li);
     btnClear(Li);
     saveTask();
 }
@@ -27,7 +22,6 @@ addBtn.addEventListener('click', function() {
     if (!input.value) return;
     createTask(input.value);
     clearInput();
-  
 });
 
 function clearInput() {
@@ -50,7 +44,7 @@ document.addEventListener('click',function(e) {
     
     if (el.classList.contains('Apagar')) {
         el.parentElement.remove();
-        saveTask();   
+        saveTask(); 
     }
 })
 
@@ -60,6 +54,7 @@ function saveTask(){
     for (let tasks of liTasks) {
        let taskText = tasks.innerText;
        taskText = taskText.replace('Apagar', '').trim();
+       //Adicionando as tasks na lista.
        List.push(taskText);
       
     }
